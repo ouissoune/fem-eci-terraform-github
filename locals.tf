@@ -62,36 +62,37 @@ locals {
 }
 
 moved {
-  from = local.repos["fem-eci-terraform-github"]
-  to   = local.repos["kilmer-mba-terraform.github"]
-}
-
-
-moved {
-  from = local.repos["fem-eci-terraform-azure-cluster"]
-  to   = local.repos["kilmer-mba-terraform-azure-cluster"]
-}
-moved {
-  from = local.repos["fem-eci-terraform-azure-network"]
-  to   = local.repos["kilmer-mba-terraform-azure-network"]
+  from = github_repository.repo["fem-eci-terraform-github"]
+  to   = github_repository.repo["kilmer-mba-terraform-github"]
 }
 
 moved {
-  from = local.repos["fem-eci-terraform-azure-serviceaccount"]
-  to   = local.repos["kilmer-mba-terraform-azure-serviceaccount"]
+  from = github_repository.repo["fem-eci-terraform-azure-cluster"]
+  to   = github_repository.repo["kilmer-mba-terraform-azure-cluster"]
 }
 
 moved {
-  from = local.repos["fem-eci-terraform-azure-keyvault"]
-  to   = local.repos["kilmer-mba-terraform-azure-keyvault"]
+  from = github_repository.repo["fem-eci-terraform-azure-network"]
+  to   = github_repository.repo["kilmer-mba-terraform-azure-network"]
 }
 
 moved {
-  from = local.repos["fem-eci-terraform-azure-rg"]
-  to   = local.repos["kilmer-mba-terraform-azure-rg"]
+  from = github_repository.repo["fem-eci-terraform-azure-serviceaccount"]
+  to   = github_repository.repo["kilmer-mba-terraform-azure-serviceaccount"]
 }
 
 moved {
-  from = local.repos["fem-eci-terraform-tfe"]
-  to   = local.repos["kilmer-mba-terraform-tfe"]
+  from = github_repository.repo["fem-eci-terraform-azure-keyvault"]
+  to   = github_repository.repo["kilmer-mba-terraform-azure-keyvault"]
 }
+
+moved {
+  from = github_repository.repo["fem-eci-terraform-azure-rg"]
+  to   = github_repository.repo["kilmer-mba-terraform-azure-rg"]
+}
+
+moved {
+  from = github_repository.repo["fem-eci-terraform-tfe"]
+  to   = github_repository.repo["kilmer-mba-terraform-tfe"]
+}
+
