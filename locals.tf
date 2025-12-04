@@ -60,3 +60,38 @@ locals {
 
   }
 }
+
+moved {
+  from = local.repos["fem-eci-terraform-github"]
+  to   = local.repos["kilmer-mba-terraform.github"]
+}
+
+
+moved {
+  from = local.repos["fem-eci-terraform-azure-cluster"]
+  to   = local.repos["kilmer-mba-terraform-azure-cluster"]
+}
+moved {
+  from = local.repos["fem-eci-terraform-azure-network"]
+  to   = local.repos["kilmer-mba-terraform-azure-network"]
+}
+
+moved {
+  from = local.repos["fem-eci-terraform-azure-serviceaccount"]
+  to   = local.repos["kilmer-mba-terraform-azure-serviceaccount"]
+}
+
+moved {
+  from = local.repos["fem-eci-terraform-azure-keyvault"]
+  to   = local.repos["kilmer-mba-terraform-azure-keyvault"]
+}
+
+moved {
+  from = local.repos["fem-eci-terraform-azure-rg"]
+  to   = local.repos["kilmer-mba-terraform-azure-rg"]
+}
+
+moved {
+  from = local.repos["fem-eci-terraform-tfe"]
+  to   = local.repos["kilmer-mba-terraform-tfe"]
+}
