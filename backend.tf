@@ -4,7 +4,7 @@ terraform {
     organization = "ilyasoi"
 
     workspaces {
-      name = "fem-eci-github"
+      name = "kilmer-mba-github"
     }
   }
 }
