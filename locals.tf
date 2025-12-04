@@ -40,8 +40,7 @@ locals {
       visibility         = "public"
     }
     
-    
-    
+
     "kilmer-mba-terraform-azure-network" = {
       description        = "Automation for Azure Network"
       gitignore_template = "Terraform"
